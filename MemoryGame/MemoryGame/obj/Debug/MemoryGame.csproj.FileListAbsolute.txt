@@ -1,0 +1,9 @@
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\bin\Debug\MemoryGame.exe.config
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\bin\Debug\MemoryGame.exe
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\bin\Debug\MemoryGame.pdb
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csprojResolveAssemblyReference.cache
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\obj\Debug\MemoryGame.Form1.resources
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\obj\Debug\MemoryGame.Properties.Resources.resources
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\obj\Debug\MemoryGame.csproj.GenerateResource.Cache
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\obj\Debug\MemoryGame.exe
+C:\Users\ayalat\CIS_109\Repository\MemoryGame\MemoryGame\obj\Debug\MemoryGame.pdb
