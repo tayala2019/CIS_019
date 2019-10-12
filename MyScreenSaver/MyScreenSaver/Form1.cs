@@ -52,5 +52,23 @@ namespace MyScreenSaver
                 PeacePics.Add(np);
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        private void formScreenSaver_Paint(object sender, PaintEventArgs e)
+        {
+            foreach (PeacePic pp in PeacePics)
+            {
+                e.Graphics.DrawImage(BGImages[pp.PicNum], pp.X, pp.Y);
+                pp.X -= 2;
+                if(pp.X < -250)
+                {
+                    pp.X = Width + rand.Next(20, 100);
+                }
+            }
+        }
     }
 }
