@@ -44,6 +44,7 @@
             this.Text = "My Screen Saver";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.formScreenSaver_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.formScreenSaver_KeyDown);
             this.ResumeLayout(false);
 

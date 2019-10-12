@@ -12,6 +12,17 @@ namespace MyScreenSaver
 {
     public partial class formScreenSaver : Form
     {
+        List<Image> BGImages = new List<Image>();
+        List<PeacePic> PeacePics = new List<PeacePic>();
+        Random rand = new Random();
+
+        class PeacePic
+        {
+            public int PicNum;
+            public float X;
+            public float Y;
+            public float Speed;
+        }
         public formScreenSaver()
         {
             InitializeComponent();
@@ -21,6 +32,11 @@ namespace MyScreenSaver
         {
             //press any key to close screen sceen saver
             Close();
+        }
+
+        private void formScreenSaver_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
