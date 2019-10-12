@@ -41,7 +41,7 @@ namespace MyScreenSaver
             {
                 BGImages.Add(new Bitmap(image));
             }
-            for (int i = 0; i < 50;i++)
+            for (int i = 0; i < 100;i++)
             {
                 PeacePic np = new PeacePic();
                 np.PicNum = i % BGImages.Count;
