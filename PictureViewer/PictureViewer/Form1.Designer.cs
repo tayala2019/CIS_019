@@ -79,6 +79,7 @@
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Stretch";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // flowLayoutPanel1
             // 
@@ -101,6 +102,7 @@
             this.closeButton.TabIndex = 0;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // setBkgrdColor
             // 
@@ -111,6 +113,7 @@
             this.setBkgrdColor.TabIndex = 1;
             this.setBkgrdColor.Text = "Set Background Color";
             this.setBkgrdColor.UseVisualStyleBackColor = true;
+            this.setBkgrdColor.Click += new System.EventHandler(this.setBkgrdColor_Click);
             // 
             // clearPicture
             // 
@@ -121,6 +124,7 @@
             this.clearPicture.TabIndex = 2;
             this.clearPicture.Text = "Clear Picture";
             this.clearPicture.UseVisualStyleBackColor = true;
+            this.clearPicture.Click += new System.EventHandler(this.clearPicture_Click);
             // 
             // showPicture
             // 
@@ -131,6 +135,7 @@
             this.showPicture.TabIndex = 3;
             this.showPicture.Text = "Show Picture";
             this.showPicture.UseVisualStyleBackColor = true;
+            this.showPicture.Click += new System.EventHandler(this.showPicture_Click);
             // 
             // openFileDialog1
             // 
@@ -147,6 +152,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Picture Viewer";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
