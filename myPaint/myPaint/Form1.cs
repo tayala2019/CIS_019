@@ -35,5 +35,57 @@ namespace myPaint
                 drawing = true;
             }
         }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            //Based on the button that the user presses of these choices will be activated
+            if (drawing)
+            {
+                //passing the graphics variable the bitmap 
+                Graphics g = Graphics.FromImage(bmp);
+                //reference the Graphcis variable and pass the pen vaiable and set the X and y axis
+                //e represents the ellipse
+                g.DrawEllipse(P, e.X, e.Y, 3, 1);
+                //referentce the picture box with the attached image method and passing in the bmp variable
+                pictureBox1.Image = bmp;
+            }
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.Red;
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.Blue;
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.Green;
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.Purple;
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.Lime;
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.Black;
+        }
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            P.Color = Color.White;
+        }
+
+       
     }
-}
+    }
+
