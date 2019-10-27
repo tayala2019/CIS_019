@@ -85,7 +85,31 @@ namespace myPaint
             P.Color = Color.White;
         }
 
-       
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Reference the saveFileDialog and set it to a new instance
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            saveFileDialog1.Filter = "Jpeg Image|*.jpeg|Bitmap Image*.bmp|";
+            saveFileDialog1.Title = "Save an immage file";
+            saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.FileName !="")
+            {
+                System.IO.FileStream fs = (System.IO.FileStream)saveFileDialog1.OpenFile();
+          
+                switch (saveFileDialog1.FilterIndex)
+                {
+                //Check for two different file types
+                case 1:
+                    this.pictureBox1.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    break;
+
+                case 2:
+                    this.pictureBox1.Image.Save(fs, System.Drawing.Imaging.ImageFormat.Bmp);
+                    break;
+                  }
+            }
+
+        }
     }
-    }
+}
 
