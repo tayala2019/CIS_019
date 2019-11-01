@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.btnBack = new System.Windows.Forms.ToolStripButton();
             this.btnFwd = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.CBO = new System.Windows.Forms.ToolStripComboBox();
             this.btGo = new System.Windows.Forms.ToolStripButton();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,15 +53,6 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 25);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(284, 236);
-            this.webBrowser1.TabIndex = 1;
-            // 
             // btnBack
             // 
             this.btnBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
@@ -70,6 +61,7 @@
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(36, 22);
             this.btnBack.Text = "Back";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnFwd
             // 
@@ -79,6 +71,7 @@
             this.btnFwd.Name = "btnFwd";
             this.btnFwd.Size = new System.Drawing.Size(54, 22);
             this.btnFwd.Text = "Forward";
+            this.btnFwd.Click += new System.EventHandler(this.btnFwd_Click);
             // 
             // toolStripSeparator1
             // 
@@ -89,6 +82,7 @@
             // 
             this.CBO.Name = "CBO";
             this.CBO.Size = new System.Drawing.Size(121, 25);
+            this.CBO.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CBO_KeyDown);
             // 
             // btGo
             // 
@@ -98,6 +92,16 @@
             this.btGo.Name = "btGo";
             this.btGo.Size = new System.Drawing.Size(26, 22);
             this.btGo.Text = "Go";
+            this.btGo.Click += new System.EventHandler(this.btGo_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 25);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(284, 236);
+            this.webBrowser1.TabIndex = 1;
             // 
             // frmMain
             // 
