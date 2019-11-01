@@ -39,5 +39,10 @@ namespace BlueLime
         {
             webBrowser1.Navigate(CBO.Text);
         }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            Text = "bluelime - " + webBrowser1.Document.Title;
+        }
     }
 }
