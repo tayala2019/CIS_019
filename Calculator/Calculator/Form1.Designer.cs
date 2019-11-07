@@ -94,6 +94,7 @@
             this.btnDivide.TabIndex = 3;
             this.btnDivide.Text = "÷";
             this.btnDivide.UseVisualStyleBackColor = false;
+            this.btnDivide.Click += new System.EventHandler(this.operator_click);
             // 
             // btnMultiply
             // 
@@ -105,6 +106,7 @@
             this.btnMultiply.TabIndex = 7;
             this.btnMultiply.Text = "x";
             this.btnMultiply.UseVisualStyleBackColor = false;
+            this.btnMultiply.Click += new System.EventHandler(this.operator_click);
             // 
             // btn6
             // 
@@ -152,6 +154,7 @@
             this.btnSubtract.TabIndex = 11;
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = false;
+            this.btnSubtract.Click += new System.EventHandler(this.operator_click);
             // 
             // btn3
             // 
@@ -199,6 +202,7 @@
             this.btnAdd.TabIndex = 15;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.operator_click);
             // 
             // btnEqual
             // 
@@ -256,6 +260,7 @@
             this.clearBtn.TabIndex = 17;
             this.clearBtn.Text = "Clear";
             this.clearBtn.UseVisualStyleBackColor = false;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
             // 
             // Form1
             // 

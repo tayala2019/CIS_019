@@ -12,7 +12,9 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        Double resultVal = 0;
+        string operatorClicked = "";
+            public Form1()
         {
             InitializeComponent();
         }
@@ -30,6 +32,19 @@ namespace Calculator
             }
             Button button = (Button)sender;
             resultBox.Text = resultBox.Text + button.Text;
+        }
+
+        private void operator_click(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            operatorClicked = button.Text;
+            resultVal = Double.Parse(resultBox.Text);
+        }
+
+        private void clearBtn_Click(object sender, EventArgs e)
+        {
+            resultBox.Text = "0";
+            resultVal = 0;
         }
     }
 }
