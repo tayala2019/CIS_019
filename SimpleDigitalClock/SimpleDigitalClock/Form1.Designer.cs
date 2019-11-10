@@ -28,14 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(1, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(775, 195);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "00:00:00";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // DigitalClock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(590, 261);
+            this.ClientSize = new System.Drawing.Size(805, 261);
+            this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "DigitalClock";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -45,6 +58,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }
 
